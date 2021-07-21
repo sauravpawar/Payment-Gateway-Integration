@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate-About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>About Us</h1>
+
+
+    </section>
+
+    <!-------about content-->
+    <section class="about-us">
+
+
+        <!---about us--->
+        <section class="about">
+            <h1>About Us</h1>
+            <p>From last 2 years Easy to Donate is providing services and helping others to overcome challenges.<br>We continue our work to help others through various ways. </p>
+            <div class="row">
+                <div class="about-col">
+                    <img src="disasterrelief.jpg">
+                    <div class="layer">
+                        <h3>Disaster Relief Funds</h3>
+                        <p>Helped the victims to restore their livelihood <br> in the affected areas.</p>
+                    </div>
+                </div>
+                <div class="about-col">
+                    <img src="educationfund.jpg">
+                    <div class="layer">
+                        <h3>Improving Education Facilities </h3>
+                        <p>Helped in providing funds to improve the <br>education facilities in rural areas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="about-col">
+                    <img src="fooddonation.jpg">
+                    <div class="layer">
+                        <h3>Food Donation</h3>
+                        <p>Food donation with help of donation collected by <br>school childrens of locality. </p>
+                    </div>
+                </div>
+
+                <div class="about-col">
+                    <img src="healthcare.jpg">
+                    <div class="layer">
+                        <h3>Health Care Program</h3>
+                        <p>Organised a free healthcare checkup program, <br>to spread awareness regarding healthy lifestyle.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+        <!---------javascript for menu-------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        <!---------Footer-------->
+        <section class="footer">
+            <h4>Easy to Donate</h4>
+            <p>We always try to reach people to help them and will continue ,<br>thats our goal at Easy to Donate.</p>
+            <h4>Follow us on</h4>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+        </section>
+</body>
+
+</html>
